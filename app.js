@@ -122,6 +122,6 @@ app.use(function(req, res, next) {
   res.sendResult(null, 404, 'Not Found')
 })
 
-app.listen(8888)
+app.listen(8888, () => console.log('http://127.0.0.1:8888'))
 
 module.exports = app
